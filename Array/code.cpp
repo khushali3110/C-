@@ -541,7 +541,7 @@ using namespace std;
 int main() {
     // Original array with 5 elements
     int arr[] = {1, 2, 3, 4, 5};
-    int newElement; // Element to insert
+    int newElement = 99; // Element to insert
     int position = 2;    // Index where we want to insert
 
     // New array to hold 6 elements (5 original + 1 new)
@@ -566,7 +566,7 @@ int main() {
         cout << newArray[i] << " ";
     }
 
-   
+    return 0;
 }
 
 
