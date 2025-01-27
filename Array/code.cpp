@@ -507,34 +507,66 @@
 
 
 
-#include<iostream>
+// #include<iostream>
+// using namespace std;
+
+// int main(){
+
+//     int arr[10] = {12,34,67,56,89,44,22,12,98,100};
+
+//     int j = 9;
+
+//     for(int i = 0; i < 10; i++){
+
+//         if(i>=j){
+//             break;
+//         }
+
+//         swap(arr[i],arr[j]);
+//         j--;
+//     }
+
+
+//     cout<<"After swap/reverse : ";
+//     for(int i = 0; i < 10; i++){
+//         cout<<arr[i] <<" ";
+//     }
+// }
+
+
+// insert array
+#include <iostream>
 using namespace std;
 
-int main(){
+int main() {
+    // Original array with 5 elements
+    int arr[] = {1, 2, 3, 4, 5};
+    int newElement; // Element to insert
+    int position = 2;    // Index where we want to insert
 
-    int arr[10] = {12,34,67,56,89,44,22,12,98,100};
+    // New array to hold 6 elements (5 original + 1 new)
+    int newArray[6];
 
-    int j = 9;
-
-    for(int i = 0; i < 10; i++){
-
-        if(i>=j){
-            break;
-        }
-
-        swap(arr[i],arr[j]);
-        j--;
+    // Copy elements before the position
+    for (int i = 0; i < position; i++) {
+        newArray[i] = arr[i];
     }
 
+    // Insert the new element at the specified position
+    newArray[position] = newElement;
 
-    cout<<"After swap/reverse : ";
-    for(int i = 0; i < 10; i++){
-        cout<<arr[i] <<" ";
+    // Copy the rest of the elements from the original array
+    for (int i = position; i < 5; i++) {
+        newArray[i + 1] = arr[i];
     }
 
-    
+    // Print the new array
+    cout << "Array after insertion: ";
+    for (int i = 0; i < 6; i++) {
+        cout << newArray[i] << " ";
+    }
 
+   
 }
-
 
 
