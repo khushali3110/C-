@@ -178,7 +178,13 @@ using namespace std;
 
 int main(){
 
-   const char *str = "khushali";
+    // const char *str = "khushali";
+
+    // cout<<str<<endl;
+
+        // or
+        
+    const char str = 'k';
 
     cout<<str<<endl;
 
