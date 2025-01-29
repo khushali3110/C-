@@ -1,36 +1,36 @@
 // #include <iostream>
 // using namespace std;
-// int addition (int num1 , int num2){
-//     cout<<"num1 "<<num1<<endl;
-//     cout<<"num2 "<<num2<<endl;
-
+// int addition(int num1, int num2)
+// {
+//     cout << "num1 " << num1 << endl;
+//     cout << "num2 " << num2 << endl;
 // }
-// int main(){
-//     addition(10,20);
-
+// int main()
+// {
+//     addition(10, 20);
 // }
+
 
 // #include <iostream>
 // using namespace std;
-// int addition (int num1 , int num2){
+// int addition(int num1, int num2)
+// {
 //     // cout<<"num1 "<<num1<<endl;
 //     // cout<<"num2 "<<num2<<endl;
-//     cout<<num1+num2<<endl;
-
+//     cout << num1 + num2 << endl;
 // }
-// int main(){
-//     addition(10 , 40);
+// int main()
+// {
+//     addition(10, 40);
 // }
-
 
 // function basic start
 // mostily used
 // #include<iostream>
 // using namespace std;
 
-
 // // Function definition
-// int addition(){    
+// int addition(){
 
 //     cout<<"Function Called.."<<endl;
 // }
@@ -38,7 +38,6 @@
 // int main(){
 //     addition();  // function call
 // }
-
 
 // sec way
 // #include<iostream>
@@ -77,7 +76,6 @@
 //     addition(20,20);  // function call
 // }
 
-
 // sec way +
 
 // #include<iostream>
@@ -100,8 +98,6 @@
 //    cout<<"Result : "<<result<<endl;
 // }
 
-
-
 // 3 way with void
 // #include<iostream>
 // using namespace std;
@@ -122,7 +118,6 @@
 
 // }
 
-
 // string
 // #include<iostream>
 // using namespace std;
@@ -136,11 +131,9 @@
 // }
 
 // int main(){
-//    printName("Fatima"); 
+//    printName("Fatima");
 
 // }
-
-
 
 // #include<iostream>
 // using namespace std;
@@ -148,19 +141,18 @@
 // // Function definition
 
 // string printName(){
-    
+
 //     string name = "Fatima Maam";
 //     return name;
 
 // }
 
 // int main(){
-//  string str =  printName(); 
+//  string str =  printName();
 
 //  cout<<"Name : "<<str<<endl;
 
 // }
-
 
 // sky value
 // 0 -> 48
@@ -171,7 +163,6 @@
 
 // a = 97
 // z = 122
-
 
 // #include<iostream>
 // using namespace std;
@@ -193,7 +184,7 @@
 //     int Z = 'Z';
 
 //     int k = '0';
-    
+
 //     cout<<"ASCCI of A : "<<A<<endl;
 //     cout<<"ASCCI of Z : "<<Z<<endl;
 //     cout<<"ASCCI of k : "<<k<<endl;
@@ -203,99 +194,110 @@
 //     cout<<ch<<endl;
 // }
 
-
-
 // function types
 
 // // Type 1 : TSRN
-// #include<iostream>
+// #include <iostream>
 // using namespace std;
-// int addition(int num1, int num2){
-//     int sum = num1+num2;
-//     cout<<"Sum : "<<sum<<endl;
+// int addition(int num1, int num2)
+// {
+//     int sum = num1 + num2;
+//     cout << "Sum : " << sum << endl;
 // }
-// int main(){
-//     addition(10,20);
+// int main()
+// {
+//     addition(10, 20);
 // }
 
 // // Type 2 : TNRN
-// #include<iostream>
+// #include <iostream>
 // using namespace std;
-// int addition(){
-//     int num1= 10;
+// int addition()
+// {
+//     int num1 = 10;
 //     int num2 = 20;
-//     int sum = num1+num2;
-//     cout<<"Sum : "<<sum<<endl;
+//     int sum = num1 + num2;
+//     cout << "Sum : " << sum << endl;
 // }
-// int main(){
+// int main()
+// {
 //     addition();
 // }
 
 // // Type 3 : TNRS
-// #include<iostream>
+// #include <iostream>
 // using namespace std;
-// int addition(){
-//     int num1= 10;
+// int addition()
+// {
+//     int num1 = 10;
 //     int num2 = 20;
-//     int sum = num1+num2;
-  
-//   return sum;
+//     int sum = num1 + num2;
+
+//     return sum;
 // }
-// int main(){
-//     cout<<"Sum : "<<addition()<<endl;
+// int main()
+// {
+//     cout << "Sum : " << addition() << endl;
 // }
 
 // Type 4 : TSRS
-// #include<iostream>
+// #include <iostream>
 // using namespace std;
-// int addition(int num1, int num2){
-//     int sum = num1+num2;
-  
-//   return sum;
-// }
-// int main(){
-//     cout<<"Sum : "<<addition(10,20)<<endl;
-// }
+// int addition(int num1, int num2)
+// {
+//     int sum = num1 + num2;
 
-
+//     return sum;
+// }
+// int main()
+// {
+//     cout << "Sum : " << addition(10, 20) << endl;
+// }
 
 // Default parameter
-// #include<iostream>
+// #include <iostream>
 // using namespace std;
-// int addition(int num1, int num2 = 20){  // jab bhee ap default parameter set kr rhe ho to ap use ek dam right me krna in function me
-//     int sum = num1+num2;
-  
-//   return sum;
-// }
-// int main(){
-//     cout<<"Sum : "<<addition(10,30)<<endl;
-// }
+// int addition(int num1, int num2 = 20)
+// { // jab bhee ap default parameter set kr rhe ho to ap use ek dam right(last) me krna in function me
+//     int sum = num1 + num2;
 
+//     return sum;
+// }
+// int main()
+// {
+//     cout << "Sum : " << addition(10, 30) << endl;
+// }
 
 // Nested function
-// #include<iostream>
+// #include <iostream>
 // using namespace std;
-// int calculate(){
-//     cout<<"Outer Function Called.."<<endl;
-//     auto addition=[](){
-//         cout<<"Inner Function Called.."<<endl;
+// int calculate()
+// {
+//     cout << "Outer Function Called.." << endl;
+//     auto addition = []()
+//     {
+//         cout << "Inner Function Called.." << endl;
 //     };
 //     addition();
 // }
-// int main(){
+// int main()
+// {
 //     calculate();
 // }
 
-
-// #include<iostream>
+// sec way
+// #include <iostream>
 // using namespace std;
-// int addition(){
-//     cout<<"Inner Function Called.."<<endl;
+// int addition()
+// {
+//     cout << "Inner Function Called.." << endl;
 // };
-// int calculate(){
-//     cout<<"Outer Function Called.."<<endl;
+// int calculate()
+// {
+//     cout << "Outer Function Called.." << endl;
 //     addition();
 // }
-// int main(){
+// int main()
+// {
 //     calculate();
 // }
