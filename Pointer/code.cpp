@@ -3,11 +3,14 @@ using namespace std;
 int main()
 {
     int a = 10;    // variable declared
-    int *khushali = &a; // pointer variable declared and assign address of a.
+    int *ptr = &a; // pointer variable declared and assign address of a.
+    
+    
     // value
-    cout << "a : " << &a << endl;
-    cout << "*khushali : " << *khushali << endl;
+    cout << "a : " << a << endl;
+    cout << "*ptr : " << *ptr << endl;
     // address
-    cout << "Address of a : " << a << endl;
-    cout << "Address of khushali : " << khushali << endl;
+    cout << "Address of a : " << &a << endl;
+    cout << "Address of ptr : " << 
+    ptr << endl;
 }
