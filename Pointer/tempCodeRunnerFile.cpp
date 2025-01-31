@@ -1,1 +1,1 @@
- // int *ptr = arr;
+
