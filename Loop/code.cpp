@@ -95,16 +95,16 @@
 // }
 
 // range
-#include<iostream>
-using namespace std;
-int main(){
-    int num;
-    int sum = 0;
-    for(num = 1; num <=10;  num++ ){
-        sum += num;
-    }
-    cout<<sum<<endl;
-}
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int num;
+//     int sum = 0;
+//     for(num = 1; num <=10;  num++ ){
+//         sum += num;
+//     }
+//     cout<<sum<<endl;
+// }
 
 
 
