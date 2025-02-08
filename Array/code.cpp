@@ -127,11 +127,9 @@
 // size of array
 // #include<iostream>
 // using namespace std;
-
 // int main(){
 
 // int arr[] = {10,20,30,40,50,60,70,80,90};
-
 
 // // sizeof()
 
@@ -166,7 +164,7 @@
 
 // for(int i = 0; i < n; i++){
 //   if(arr[i] == key){
-//     cout<<"Element present in array at "<<i<<" index! "<<endl;
+//     cout<<"Element present in array at index " <<i<< " element " <<key<<endl;
 //   }
 // }
 // }
@@ -374,7 +372,6 @@
 
 // #include<iostream>
 // using namespace std;
-
 // int main(){
     
 //     int arr[5] = {10,3,5,8,2};
@@ -535,54 +532,52 @@
 
 
 // insert array
-// #include <iostream>
-// using namespace std;
+#include <iostream>
+using namespace std;
 
-// int main() {
-//     // Original array with 5 elements
-//     int arr[] = {1, 2, 3, 4, 5};
-//     int newElement = 99; // Element to insert
-//     int position = 2;    // Index where we want to insert
+int main() {
+    // Original array with 5 elements
+    int arr[] = {1, 2, 3, 4, 5};
+    int newElement = 99; // Element to insert
+    int position = 2;    // Index where we want to insert
 
-//     // New array to hold 6 elements (5 original + 1 new)
-//     int newArray[6];
+    // New array to hold 6 elements (5 original + 1 new)
+    int newArray[6];
 
-//     // Copy elements before the position
-//     for (int i = 0; i < position; i++) {
-//         newArray[i] = arr[i];
-//     }
+    // Copy elements before the position
+    for (int i = 0; i < position; i++) {
+        newArray[i] = arr[i];
+    }
 
-//     // Insert the new element at the specified position
-//     newArray[position] = newElement;
+    // Insert the new element at the specified position
+    newArray[position] = newElement;
 
-//     // Copy the rest of the elements from the original array
-//     for (int i = position; i < 5; i++) {
-//         newArray[i + 1] = arr[i];
-//     }
+    // Copy the rest of the elements from the original array
+    for (int i = position; i < 5; i++) {
+        newArray[i + 1] = arr[i];
+    }
 
-//     // Print the new array
-//     cout << "Array after insertion: ";
-//     for (int i = 0; i < 6; i++) {
-//         cout << newArray[i] << " ";
-//     }
-
-//     return 0;
-// }
+    // Print the new array
+    cout << "Array after insertion: ";
+    for (int i = 0; i < 6; i++) {
+        cout << newArray[i] << " ";
+    }
+}
 
 
 
 // passing array in function
-#include<iostream>
-using namespace std;
-int printArray(int arr[],int size){
-    for(int i = 0; i < size; i++){
-        cout<<arr[i]<<" ";
-    }
-}
-int main(){
-    int n = 6;
-    int arr[6] = {11,222,45,67,89,54};
-    printArray(arr, 6);
-}
+// #include<iostream>
+// using namespace std;
+// int printArray(int arr[],int size){
+//     for(int i = 0; i < size; i++){
+//         cout<<arr[i]<<" ";
+//     }
+// }
+// int main(){
+//     int n = 6;
+//     int arr[6] = {11,222,45,67,89,54};
+//     printArray(arr, 6);
+// }
 
 
