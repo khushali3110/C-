@@ -384,8 +384,6 @@
 //     delete *p;  // deallocate memory
 // }
 
-
-
 // Scope Resolution Opeartor[::]
 // #include <iostream>
 // using namespace std;
@@ -396,3 +394,127 @@
 //     cout << "Local Value : " << a << endl;
 //     cout << "Globle Value : " << ::a << endl;
 // }
+
+// Static Data member :
+// #include<iostream>
+// using namespace std;
+// class Teacher{
+//     public :
+//       string name; // instance variable
+//       int age; // instance variable
+//       static double salary;  // class level variable
+//     Teacher(){
+//         this->name = "Raj";
+//         this->age = 11;
+//     }
+//     Teacher(string name, int age){
+//         this->name = name;
+//         this->age = age;
+//     }
+//     void getDetails(){
+//         cout<<"Name : "<<name<<endl;
+//         cout<<"Age : "<<age<<endl;
+//         cout<<"Salary : "<<salary<<endl;
+//     }
+// };
+// double Teacher::salary = 99;
+// int main(){
+//     Teacher t1;  // create object => allocate memory to non static data member => automic parameterless cunstructor called..
+
+//     Teacher t2("Vraj",5);  // function call -> parameter constructor
+//     t1.getDetails();
+//     t2.getDetails();
+// }
+
+// Static member function
+// #include <iostream>
+// using namespace std;
+// class Teacher
+// {
+
+// public:
+//     static double salary; // class level variable
+//     static void getDetails()
+//     {
+//         cout << "Salary : " << salary << endl;
+//     }
+
+// };
+// double Teacher::salary = 99; // static data member initialiston
+// int main()
+// {
+//     Teacher::getDetails();
+// }
+
+// constructor
+
+// #include<iostream>
+// using namespace std;
+// class Teacher{
+
+//     public :
+//     Teacher(){
+//         cout<<"Constructor Called..."<<endl;
+//     }
+// };
+
+// int main(){
+//     Teacher t1;  // automatic parameterless (default) constructor call
+// }
+
+// Destrutor
+// #include<iostream>
+// using namespace std;
+// class Teacher{
+//     public :
+//     Teacher(){
+//         cout<<"Constructor Called..."<<endl;
+//     }
+//     ~Teacher(){
+//         cout<<"Destructor Called..."<<endl;
+//     }
+// };
+// int main(){
+//     Teacher t1;  // automatic parameterless (default) constructor call
+// }
+
+// deallocated ptr destructor
+
+#include <iostream>
+using namespace std;
+
+class Teacher
+{
+
+public:
+    static double salary; // class level variable
+    int *ptr;
+
+    Teacher()
+    {
+        cout << "Constructor Called..." << endl;
+    }
+    Teacher(int x)
+    {
+        ptr = new int;
+        ptr = &x;
+    }
+
+    ~Teacher()
+    {
+        delete ptr;
+    }
+
+    void getDetails()
+    {
+        cout << "Value : " << *ptr << endl;
+    }
+};
+
+int main()
+{
+
+    Teacher t1; // automatic parameterless (default) constructor call
+    Teacher t2(10);
+    t2.getDetails();
+}
