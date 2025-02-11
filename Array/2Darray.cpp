@@ -37,7 +37,6 @@
 
 
 
-
 // #include<iostream>
 // using namespace std;
 
@@ -61,15 +60,15 @@
 //     arr[2][2] = 79;
 //     arr[2][3] = 20;
 
-// // loop -> print ->2d array
+// loop -> print ->2d array
 
 
-// // foreach -> not ok
-//     // for(int element : arr){
-//     //     cout<<element<<endl;
-//     // }
+// foreach -> not ok
+//     for(int element : arr){
+//         cout<<element<<endl;
+//     }
 
-//     // output
+    // output
 
 //     for(int i = 0; i < row_size; i++){
 
@@ -118,32 +117,32 @@
 
 
 // uesr input thi
-#include<iostream>
-using namespace std;
+// #include<iostream>
+// using namespace std;
 
-int main(){
-    int row_size = 3;
-    int col_size = 4;
+// int main(){
+//     int row_size = 3;
+//     int col_size = 4;
 
-    int arr[row_size][col_size];
+//     int arr[row_size][col_size];
 
-    for(int i = 0; i < row_size; i++){
+//     for(int i = 0; i < row_size; i++){
 
-        for(int j = 0; j < col_size; j++){
-            cout<<"Row "<<i<<" index & Col "<<j<<" index :";
-            cin>>arr[i][j];
-        }
-        cout<<endl;
-    }
+//         for(int j = 0; j < col_size; j++){
+//             cout<<"Row "<<i<<" index & Col "<<j<<" index :";
+//             cin>>arr[i][j];
+//         }
+//         cout<<endl;
+//     }
 
-    // output
+//     // output
 
-    for(int i = 0; i < row_size; i++){
+//     for(int i = 0; i < row_size; i++){
 
-        for(int j = 0; j < col_size; j++){
+//         for(int j = 0; j < col_size; j++){
 
-            cout<<arr[i][j]<<" ";
-        }
-        cout<<endl;
-    }
-}
+//             cout<<arr[i][j]<<" ";
+//         }
+//         cout<<endl;
+//     }
+// }
