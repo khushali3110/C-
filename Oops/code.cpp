@@ -519,8 +519,6 @@
 //     t2.getDetails();
 // }
 
-
-
 // Way of Inheritance costak 741 sudhi:)
 // public to public
 // #include <iostream>
@@ -545,8 +543,6 @@
 //     Car c1;
 //     c1.display();
 // }
-
-
 
 // // public to protected
 // #include<iostream>
@@ -575,8 +571,6 @@
 // c1.display();
 // }
 
-
-
 // public to private
 // #include<iostream>
 // using namespace std;
@@ -602,34 +596,34 @@
 // b1.display();
 // }
 
-
-
 // // protected to public
-// #include<iostream>
+// #include <iostream>
 // using namespace std;
 // // Base class
-// class Vehical{
-//     protected :
+// class Vehical
+// {
+// protected:
 //     int number;
-
 // };
 // // Derived Class
-// class Car : public Vehical{
+// class Car : public Vehical
+// {
 // };
-// class BMW : public Car{
-//     public :
-//     void display(){
-//         cout<<"Veical has atleat 2 wheels "<<number<<endl;
+// class BMW : public Car
+// {
+// public:
+//     void display()
+//     {
+//         cout << "Veical has atleat 2 wheels " << number << endl;
 //     }
 // };
-// int main(){
-// // Car c1;
-// // c1.display();
-// BMW b1;
-// b1.display();
+// int main()
+// {
+//     // Car c1;
+//     // c1.display();
+//     BMW b1;
+//     b1.display();
 // }
-
-
 
 // // protected to protected
 // #include<iostream>
@@ -656,8 +650,6 @@
 // b1.display();
 // }
 
-
-
 // protected to private
 // #include<iostream>
 // using namespace std;
@@ -683,7 +675,6 @@
 // b1.display();
 // }
 
-
 // // private to public
 // #include<iostream>
 // using namespace std;
@@ -704,8 +695,6 @@
 // Car c1;
 // c1.display();
 // }
-
-
 
 // // private to protected
 // #include<iostream>
@@ -728,8 +717,6 @@
 // c1.display();
 // }
 
-
-
 // private to private
 // #include<iostream>
 // using namespace std;
@@ -750,8 +737,6 @@
 // Car c1;
 // c1.display();
 // }
-
-
 
 // 5 types of inheritance
 //  Single Inheritance
@@ -775,10 +760,8 @@
 //     Dog d;
 //     d.eat();  // Inherited from Animal
 //     d.bark();
-    
+
 // }
-
-
 
 // Multiple Inheritance
 // #include <iostream>
@@ -811,8 +794,6 @@
 //     m.manage();
 //     return 0;
 // }
-
-
 
 // Multilevel Inheritance
 // #include <iostream>
@@ -847,68 +828,73 @@
 //     return 0;
 // }
 
-
-
 //  Hierarchical Inheritance
-#include <iostream>
-using namespace std;
-// Base class
-class Shape {
-public:
-    void draw() {
-        cout << "Drawing Shape..." << endl;
-    }
-};
-// Derived class 1
-class Circle : public Shape {
-public:
-    void area() {
-        cout << "Calculating Circle Area..." << endl;
-    }
-};
-// Derived class 2
-class Square : public Shape {
-public:
-    void area() {
-        cout << "Calculating Square Area..." << endl;
-    }
-};
-int main() {
-    Circle c;
-    Square s;
-    c.draw();
-    c.area();
-    s.draw();
-    s.area();
-    return 0;
-}
-
-
+// #include <iostream>
+// using namespace std;
+// // Base class
+// class Shape {
+// public:
+//     void draw() {
+//         cout << "Drawing Shape..." << endl;
+//     }
+// };
+// // Derived class 1
+// class Circle : public Shape {
+// public:
+//     void area() {
+//         cout << "Calculating Circle Area..." << endl;
+//     }
+// };
+// // Derived class 2
+// class Square : public Shape {
+// public:
+//     void area() {
+//         cout << "Calculating Square Area..." << endl;
+//     }
+// };
+// int main() {
+//     Circle c;
+//     Square s;
+//     c.draw();
+//     c.area();
+//     s.draw();
+//     s.area();
+//     return 0;
+// }
 
 //  Hybrid Inheritance
 // #include <iostream>
 // using namespace std;
 // // Base class
-// class Engine {
+// class Engine
+// {
 // public:
-//     void start() {
+//     void start()
+//     {
 //         cout << "Engine started." << endl;
 //     }
 // };
 // // Intermediate base class 1
-// class Car : virtual public Engine {};
+// class Car : virtual public Engine
+// {
+// };
 // // Intermediate base class 2
-// class Boat : virtual public Engine {};
+// class Boat : virtual public Engine
+// {
+// };
 // // Derived class
-// class AmphibiousVehicle : public Car, public Boat {
+// class AmphibiousVehicle : public Car, public Boat
+// {
 // public:
-//     void transform() {
+//     void transform()
+//     {
 //         cout << "Switching modes." << endl;
 //     }
 // };
-// int main() {
+// int main()
+// {
 //     AmphibiousVehicle av;
-//     av.start();  // Inherited from Engine
+//     av.start(); // Inherited from Engine
 //     av.transform();
 //     return 0;
 // }
