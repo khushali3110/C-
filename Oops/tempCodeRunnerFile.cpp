@@ -1,1 +1,1 @@
- Teacher::getDetails();
+yName

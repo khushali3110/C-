@@ -131,7 +131,7 @@
 //    cout<<"Age : "<<f.age<<endl;
 // }
 
-// Encapsulation
+// 1.Encapsulation
 // getter and setter method
 
 // #include <iostream>
@@ -738,6 +738,7 @@
 // c1.display();
 // }
 
+// 2.inheritance
 // 5 types of inheritance
 //  Single Inheritance
 // #include <iostream>
@@ -897,4 +898,182 @@
 //     av.start(); // Inherited from Engine
 //     av.transform();
 //     return 0;
+// }
+
+// 3.polymorphism
+// 1. compile time polymorphism -> static  -> overloading
+// constructor method proper way
+// #include <iostream>
+// using namespace std;
+// class Student
+// {
+// public:
+//     string name;
+//     int age;
+//     int id;
+//     // constructor -> overloading
+//     Student()
+//     {
+//         cout << "Parameterless Constructor called S1.." << endl;
+//     }
+//     Student(string name)
+//     {
+//         this->name = name;
+//         cout << "Parameter Constructor called S2.." << endl;
+//     }
+//     Student(string name, int age)
+//     {
+//         this->name = name;
+//         this->age = age;
+//         cout << "Parameter Constructor called S3.." << endl;
+//     }
+//     Student(string name, int age, int id)
+//     {
+//         this->name = name;
+//         this->age = age;
+//         this->id = id;
+//         cout << "Parameter Constructor called S4.." << endl;
+//     }
+//     void getDetails()
+//     {
+//         cout << "Name : " << name << endl;
+//         cout << "Age : " << age << endl;
+//         cout << "id : " << id << endl;
+//         cout << "Name : " << name << endl;
+//     }
+// };
+// int main()
+// {
+//     Student s1;
+//     Student s2("Raj");
+//     Student s3("Janim", 22);
+//     Student s4("Utkarsh", 20, 1);
+//     s4.getDetails();
+// }
+
+
+// sec way of inslization but is use not
+// method overloading
+// #include <iostream>
+// using namespace std;
+// class Student
+// {
+// public:
+//     string name;
+//     int age;
+//     int id;
+
+//     // constructor -> overloading
+//     Student()
+//     {
+//         cout << "Parameterless Constructor called S1.." << endl;
+//     }
+//     Student(string name)
+//     {
+//         this->name = name;
+//         cout << "Parameter Constructor called S2.." << endl;
+//     }
+//     Student(string name, int age)
+//     {
+//         this->name = name;
+//         this->age = age;
+//         cout << "Parameter Constructor called S3.." << endl;
+//     }
+//     Student(string name, int age, int id)
+//     {
+//         this->name = name;
+//         this->age = age;
+//         this->id = id;
+//         cout << "Parameter Constructor called S4.." << endl;
+//     }
+//     // method overloading with different parameters
+//     void getDetails()
+//     {
+//         cout << "Name : " << name << endl;
+//         cout << "Age : " << age << endl;
+//         cout << "id : " << id << endl;
+//     }
+//     void getDetails(bool onlyName)
+//     {
+//         if (onlyName)
+//         {
+//             cout << "Name : " << name << endl;
+//         }
+//     }
+// };
+// int main()
+// {
+//     Student s1;
+//     Student s2("Raj");
+//     Student s3("Janim", 22);
+//     Student s4("Utkarsh", 20, 1);
+//     s4.getDetails(); // Calls full details method
+//     cout << "Next... " << endl;
+//     s2.getDetails(true); // Calls only name method
+// }
+
+
+// Operator overloading
+// #include<iostream>
+// using namespace std;
+// class Complex{
+//     public :
+//     int real;
+//     int img;
+//     Complex() {
+//         real = 0;
+//         img = 0;
+//     }
+//     Complex(int real, int img){
+//         this->real = real;
+//         this->img = img;
+//     }
+//     Complex operator +(Complex & other){
+//         Complex result;
+//         result.real = real + other.real;
+//         result.img = img + other.img;
+//         return result;
+//     }
+//     void getComplex(){
+//         cout<<"Complex number : "<<real<<"+"<<img<<"i"<<endl;
+//     }
+// };
+// int main(){
+//     Complex c1(5,4);
+//     Complex c2(2,1);
+//     Complex c3 = c1+c2;
+//     c3.getComplex();
+// }
+
+
+// multiple opeartor
+// #include<iostream>
+// using namespace std;
+// class Complex{
+//     public :
+//     int real;
+//     int img;
+//     Complex() {
+//         real = 0;
+//         img = 0;
+//     }
+//     Complex(int real, int img){
+//         this->real = real;
+//         this->img = img;
+//     }
+//     Complex operator *(Complex &other){
+//         Complex result;
+//         result.real = real * other.real;
+//         result.img = img *other.img;
+//         return result;
+//     }
+//     void getComplex(){
+//         cout<<"Complex number : "<<real<<"+"<<img<<"i"<<endl;
+//     }
+// };
+// int main(){
+//     Complex c1(5,4);
+//     Complex c2(2,1);
+//     Complex c3 = c1*c2;
+//     c3.getComplex();
 // }
