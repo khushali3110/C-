@@ -1094,6 +1094,7 @@ public:
         cout << "Child Class" << endl;
     }
 };
+
 int main()
 {
     Parent p;
