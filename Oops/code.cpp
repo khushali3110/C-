@@ -1076,30 +1076,259 @@
 // }
 
 // Polymorphism : run-time polymorphism overriding
+// #include <iostream>
+// using namespace std;
+// class Parent
+// {
+// public:
+//     virtual void display()
+//     {
+//         cout << "Parent Class" << endl;
+//     }
+// };
+// class Child : public Parent
+// {
+// public:
+//     void display() override
+//     {
+//         cout << "Child Class" << endl;
+//     }
+// };
+
+// int main()
+// {
+//     Parent p;
+//     p.display();
+//     Child ch;
+//     ch.display();
+//     ch.Parent::display();
+// }
+
+// 4. Abstraction Class
+//  protected thi che
+//  #include <iostream>
+//  using namespace std;
+//  class Shekhawat
+//  {
+//  protected:
+//      virtual void speak() = 0;
+//      void display()
+//      {
+//          cout << "Base Class.." << endl;
+//      }
+
+//     public:
+//     void showDisplay() // Public method to access protected function
+//     {
+//         display(); // ✅ Allowed within derived class
+//     }
+// };
+// class Fatima : protected Shekhawat
+// {
+//     public:
+//     void speak()
+//     {
+//         cout << "She speak continuasly..." << endl;
+//     }
+
+// public :
+//     void showDisplay() // Public method to access protected function
+//     {
+//         display(); // ✅ Allowed within derived class
+//     }
+
+// };
+// int main()
+// {
+//     // Shekhawat sh; // we can not create object of abstract class
+//     // Shekhawat::display();
+//     Fatima ft;
+
+//     ft.showDisplay();
+//     ft.speak();
+//     // sh.showDisplay();
+// }
+
+// sir no code with public
+// #include <iostream>
+// using namespace std;
+// class Shekhawat
+// {
+// public:
+//     virtual void speak() = 0;
+//     void display()
+//     {
+//         cout << "Base Class.." << endl;
+//     }
+// };
+// class Fatima : public Shekhawat
+// {
+// public:
+//     void speak()
+//     {
+//         cout << "She speak continuasly..." << endl;
+//     }
+// };
+// int main()
+// {
+//     // Shekhawat sh; // we can not create object of abstract class
+//     // Shekhawat::display(); its static
+//     Fatima ft;
+//     ft.display();
+//     ft.speak();
+// }
+
+// its static object banvu nahi pde
+// #include<iostream>
+// using namespace std;
+// class Shekhawat{
+//     public :
+//      static void display(){
+//         cout<<"Base Class.."<<endl;
+//     }
+// };
+// int main(){
+//     Shekhawat::display();
+// }
+
+
+// abstract class
+// #include<iostream>
+// using namespace std;
+// // this class behave like interface
+// class Shekhawat{
+//     public :
+//     virtual void speak() = 0;
+// };
+// class Fatima: public Shekhawat{
+//     public :
+//     void speak() override {
+//         cout<<"She speak continuasly..."<<endl;
+//     }
+// };
+// int main(){
+  
+//     Fatima ft;
+//     ft.speak();
+// }
+
+
+
+
+
+// copy/shallow constructor
+// #include <iostream>
+// using namespace std;
+
+// class Student
+// {
+// public:
+//     string *name;
+//     int age;
+
+//     Student(string n, int a)
+//     {
+//         this->name = new string(n);
+      
+//         this->age = a;
+//     }
+
+//     // copy constructor
+
+//     Student(const Student & other)
+//     {
+//         name = other.name;
+//         age = other.age;
+//     }
+
+//     ~Student(){
+//         cout << "Distructor called..." << endl;
+
+//         delete name;
+
+//         cout << "Name : " << *name << endl;
+//     }
+
+//     void display()
+//     {
+//         cout << "I am " << *name << ". My age is " << age << endl;
+//     }
+// };
+
+// int main()
+// {
+//     Student s1("Vraj", 24); // parameterized constructor
+
+//     Student s2 = s1; // copy constructor
+
+//     s1.display();
+
+//     s2.display();
+
+//     cout << "Updated data getting..." << endl;
+
+//     *s2.name = "Prakash";
+
+//     s1.display();
+//     s2.display();
+// }
+
+
+
+
+// deep constructor
 #include <iostream>
 using namespace std;
-class Parent
+
+class Student
 {
 public:
-    virtual void display()
+    string *name;
+    int age;
+
+    Student(string n, int a)
     {
-        cout << "Parent Class" << endl;
+        this->name = new string(n);
+      
+        this->age = a;
     }
-};
-class Child : public Parent
-{
-public:
-    void display() override
+
+    // copy constructor
+
+    Student(const Student &other)
     {
-        cout << "Child Class" << endl;
+        this->name = new string(*other.name);
+        age = other.age;
+    }
+
+    ~Student(){
+        cout << "Distructor called..." << endl;
+
+        delete name;
+
+        cout << "Name : " << *name << endl;
+    }
+
+    void display()
+    {
+        cout << "I am " << *name << ". My age is " << age << endl;
     }
 };
 
 int main()
 {
-    Parent p;
-    p.display();
-    Child ch;
-    ch.display();
-    ch.Parent::display();
+    Student s1("Vraj", 24); // parameterized constructor
+
+    Student s2 = s1; // copy constructor
+
+    s1.display();
+
+    s2.display();
+
+    cout << "Updated data getting..." << endl;
+
+    *s2.name = "Prakash";
+
+    s1.display();
+    s2.display();
 }
