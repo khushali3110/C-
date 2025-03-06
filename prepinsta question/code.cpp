@@ -867,8 +867,6 @@ int main ()
     if(sum1/num1 == sum2/num2)
         cout << num1 << " & " << num2 << " are friendly pairs";
     else
-        cout << num1 << " & " << num2 << " are not friendly pairs";
-
-    
+        cout << num1 << " & " << num2 << " are not friendly pairs";    
 }
 
