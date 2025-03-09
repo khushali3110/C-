@@ -122,6 +122,6 @@ int main()
     insertAtPosition(head, 3, 3000);
     display(head);
     insertAtPosition(head, 10, 101010);
-
+    display(head);
     return 0;
 }
