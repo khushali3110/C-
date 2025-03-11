@@ -63,6 +63,7 @@
              {
                  head = temp->next;
              }
+             
              else
              {
                  prev->next = temp->next;
