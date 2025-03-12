@@ -24,7 +24,8 @@ int main()
     myStack2.push(7000);
     myStack2.push(8000);
 
-    myStack1.swap(myStack2);
+
+    // myStack1.swap(myStack2);
 
     cout << "First Stack display : " << endl;
 
@@ -36,6 +37,7 @@ int main()
     cout << endl;
 
     cout << "Second Stack display : " << endl;
+    cout<<"size of stack :"<<myStack1.size()<<endl;
 
     while (myStack2.size())
     {
@@ -43,4 +45,5 @@ int main()
         myStack2.pop();
     }
     cout << endl;
+    cout<<"size of stack :"<<myStack2.size()<<endl;
 }

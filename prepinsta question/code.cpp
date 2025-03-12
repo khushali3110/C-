@@ -1,4 +1,4 @@
-// 1 Positive or Negative number
+// 1. Positive or Negative number
 
 // #include <iostream>
 // using namespace std;
@@ -22,7 +22,7 @@
 //     }
 // }
 
-// 2 Even or Odd number:
+// 2. Even or Odd number:
 // #include <iostream>
 // using namespace std;
 // int main()
@@ -38,7 +38,7 @@
 //     }
 // }
 
-// 3 Sum of First N Natural numbers:
+// 3. Sum of First N Natural numbers:
 
 // #include <iostream>
 // using namespace std;
@@ -52,7 +52,7 @@
 //     cout << "sum of natural number:"<< sum << endl;
 // }
 
-// 4 Sum of N natural numbers:
+// 4. Sum of N natural numbers:
 // #include<iostream>
 // using namespace std;
 
@@ -71,7 +71,7 @@
 
 // }
 
-// 5 Sum of numbers in a given range:
+// 5. Sum of numbers in a given range:
 // #include<iostream>
 // using namespace std;
 // int main(){
@@ -83,7 +83,7 @@
 //     cout<<sum<<endl;
 // }
 
-// 6 Greatest of two numbers:
+// 6. Greatest of two numbers:
 // #include <iostream>
 // using namespace std;
 // int main()
@@ -94,7 +94,7 @@
 
 // }
 
-// 7 Greatest of the Three numbers:
+// 7. Greatest of the Three numbers:
 // #include <iostream>
 // using namespace std;
 // int main()
@@ -106,7 +106,7 @@
 
 // }
 
-// 8 Leap year or not:
+// 8. Leap year or not:
 
 // #include <iostream>
 // using namespace std;
@@ -154,7 +154,7 @@
 //     }
 // }
 
-// 10 Prime number with count krse nd ketla count krse ae dekhase
+// 10. Prime number with count krse nd ketla count krse ae dekhase
 // #include<iostream>
 // using namespace std;
 
@@ -182,7 +182,7 @@
 
 // }
 
-// 11 Prime number within a given range:
+// 11. Prime number within a given range:
 // #include<iostream>
 // using namespace std;
 // int main(){
@@ -214,7 +214,7 @@
 //    }
 // }
 
-// 12 Sum of digits of a number:
+// 12. Sum of digits of a number:
 // #include<iostream>
 // using namespace std;
 
@@ -240,7 +240,7 @@
 
 // }
 
-// 13 Reverse of a number :
+// 13. Reverse of a number :
 // #include<iostream>
 // using namespace std;
 
@@ -262,7 +262,9 @@
 //     cout<<"Reverse : "<<rev<<endl;
 // }
 
-// 14 Palindrome number:
+
+// 14. Palindrome number:
+// reverse same thay ae palindrome like a : 121
 // #include<iostream>
 // using namespace std;
 
@@ -290,7 +292,8 @@
 //    }
 // }
 
-// 15 Armstrong number :
+
+// 15. Armstrong number :
 // Example = 407 (power = 3)
 // 407 =  64 + 0 + 343 = 407
 // #include <iostream>
@@ -347,7 +350,8 @@
 //     }
 // }
 
-// 16 Armstrong number :
+
+// 16. Armstrong number :
 // Example = 407 (power = 3)
 // 407 =  64 + 0 + 343 = 407
 
@@ -407,7 +411,8 @@
 
 //  Today
 
-// // 17 Armstrong number in a given range:
+
+// // 17. Armstrong number in a given range:
 
 // #include <iostream>
 // #include <cmath>  // For pow() function
@@ -459,10 +464,13 @@
 //     return 0;
 // }
 
-// 18 fibonacci series upto nth term
+
+
+// 18. fibonacci series upto nth term
 
 // #include <iostream>
 // using namespace std;
+
 
 // void fibonacci(int n) {
 //     int a = 0, b = 1, nextTerm;
@@ -492,7 +500,8 @@
 //     return 0;
 // }
 
-// 19 Find the Nth Term of the Fibonacci Series
+
+// 19. Find the Nth Term of the Fibonacci Series
 
 // #include <iostream>
 // using namespace std;
@@ -522,7 +531,7 @@
 //     return 0;
 // }
 
-// 20 Factorial of a number
+// 20. Factorial of a number
 
 // #include <iostream>
 // using namespace std;
@@ -551,13 +560,15 @@
 //     return 0;
 // }
 
-// 21 Power of a number :
+// 21. Power of a number :
+// 2^3 = 8
+// 3^2 = 9
 
 // #include <iostream>
 // using namespace std;
 
-// long long power(int base, int exponent) {
-//     long long result = 1;  // Initialize result as 1
+// long power(int base, int exponent) {
+//      long result = 1;  // Initialize result as 1
 
 //     for (int i = 0; i < exponent; i++) {
 //         result *= base;  // Multiply result by base in each iteration
@@ -579,7 +590,8 @@
 //     return 0;
 // }
 
-// 22 Factor of a number :
+
+// 22. Factor of a number :
 
 // #include <iostream>
 // using namespace std;
@@ -609,7 +621,9 @@
 //     return 0;
 // }
 
-// 23 Finding Prime Factors of a number
+
+// 23. Finding Prime Factors of a number
+
 // #include <iostream>
 // using namespace std;
 
@@ -632,7 +646,7 @@
 
 // }
 
-// 24 strong number
+// 24. strong number
 // For Example: 145
 // 145 = 1! x 4! x 5! 
 
@@ -680,7 +694,8 @@
 
 // }
 
-// 25 perfect number
+
+// 25. perfect number
 // For Example: 28
 // factor : 1 + 2 + 4 + 7 + 14 = 28
 
@@ -703,7 +718,10 @@
 
 // }
 
+
 // 26. perfect square
+// squre sacho hoy toh perfect 2²=4
+
 // #include <bits/stdc++.h>
 // using namespace std;
 
@@ -720,13 +738,14 @@
 
 // int main()
 // {
-//     long long x = 84;
+//     long long x = 4;
 //     if (isPerfectSquare(x))
 //         cout << "True";
 //     else
 //         cout << "False";
 //     return 0;
 // }
+
 
 // 27. automorphic number
 // 6 = (6)² = 36(last number same hovo joye)
@@ -765,6 +784,7 @@
 
 // }
 
+
 // 28. harshad number
 // 18 → Sum of digits = 1 + 8 = 9
 // 18 is divisible by 9, so it is a Harshad number
@@ -798,6 +818,7 @@
 //     return 0;
 // }
 
+
 // 29 abundant number
 
 // Ex:- Abundant number 12 having a proper divisor is 1, 2, 3, 4, 6
@@ -810,7 +831,7 @@
 
 // int main()
 // {
-//     int n = 12, sum = 0;
+//     int n = 5, sum = 0;
 
 //     for (int i = 1; i < n; i++)
 //     {
@@ -819,6 +840,7 @@
 //     }
 //     if (sum > n)
 //     {
+
 //         cout << n << " is an Abundant Number\n";
 //         cout << "The Abundance is: " << (sum - n);
 //     }
@@ -843,30 +865,30 @@
 // 2 2 is friendly pair
 
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-int getDivisorsSum(int num){
+// int getDivisorsSum(int num){
     
-    int sum = 0;
+//     int sum = 0;
     
-    for(int i = 1; i < num; i++){
-        if(num % i == 0)
-            sum = sum + i;
-    }
-    return sum;
-}
+//     for(int i = 1; i < num; i++){
+//         if(num % i == 0)
+//             sum = sum + i;
+//     }
+//     return sum;
+// }
 
-int main ()
-{
-    int num1 = 6, num2 = 28;
+// int main ()
+// {
+//     int num1 = 6, num2 = 28;
     
-    int sum1 = getDivisorsSum(num1);
-    int sum2 = getDivisorsSum(num2);
+//     int sum1 = getDivisorsSum(num1);
+//     int sum2 = getDivisorsSum(num2);
     
-    if(sum1/num1 == sum2/num2)
-        cout << num1 << " & " << num2 << " are friendly pairs";
-    else
-        cout << num1 << " & " << num2 << " are not friendly pairs";    
-}
+//     if(sum1/num1 == sum2/num2)
+//         cout << num1 << " & " << num2 << " are friendly pairs";
+//     else
+//         cout << num1 << " & " << num2 << " are not friendly pairs";    
+// }
 
