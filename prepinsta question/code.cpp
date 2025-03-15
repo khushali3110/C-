@@ -468,37 +468,37 @@
 
 // 18. fibonacci series upto nth term
 
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
 
-void fibonacci(int n) {
-    int a = 0, b = 1, nextTerm;
+// void fibonacci(int n) {
+//     int a = 0, b = 1, nextTerm;
 
-    cout << "Fibonacci Series up to " << n << " terms: ";
+//     cout << "Fibonacci Series up to " << n << " terms: ";
 
-    for (int i = 1; i <= n; i++) {
-        cout << a << " ";
-        nextTerm = a + b;  // Compute next term
-        a = b;             // Move first term to second
-        b = nextTerm;      // Move second term to next
-    }
-    cout << endl;
-}
+//     for (int i = 1; i <= n; i++) {
+//         cout << a << " ";
+//         nextTerm = a + b;  // Compute next term
+//         a = b;             // Move first term to second
+//         b = nextTerm;      // Move second term to next
+//     }
+//     cout << endl;
+// }
 
-int main() {
-    int n;
-    cout << "Enter the number of terms: ";
-    cin >> n;
+// int main() {
+//     int n;
+//     cout << "Enter the number of terms: ";
+//     cin >> n;
 
-    if (n <= 0) {
-        cout << "Please enter a positive number." << endl;
-    } else {
-        fibonacci(n);
-    }
+//     if (n <= 0) {
+//         cout << "Please enter a positive number." << endl;
+//     } else {
+//         fibonacci(n);
+//     }
 
-    return 0;
-}
+//     return 0;
+// }
 
 
 // 19. Find the Nth Term of the Fibonacci Series
