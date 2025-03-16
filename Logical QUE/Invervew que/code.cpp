@@ -48,7 +48,7 @@
 //     int totalPaisa, rupees, paisa;
 //     cout << "Enter Total Paisa : ";
 //     cin >> totalPaisa;
-//     rupees = totalPaisa / 100;
+//     rupees = rupees / 100;
 //     paisa = totalPaisa % 100;
 //     cout << "Total Paisa = " << totalPaisa << endl;
 //     cout << "Converted Paisa in Rs = " << rupees << "." << paisa << endl;
@@ -57,12 +57,15 @@
 
 // 4 Sum of Digits of a Number
 // Iterative C++ Code to find sum of digits
+// 1+2=3
 // #include <iostream>
 // using namespace std;
 
-// int sumOfDigits(int n) {
+// int sumOfDigits(int n)
+// {
 //     int sum = 0;
-//     while (n != 0) {
+//     while (n != 0)
+//     {
 
 //         // Extract the last digit
 //         int last = n % 10;
@@ -76,17 +79,18 @@
 //     return sum;
 // }
 
-// int main() {
+// int main()
+// {
 //     int n;
-//     cout<<"enter the number "<<endl;
-//     cin>>n;
+//     cout << "enter the number " << endl;
+//     cin >> n;
 //     cout << sumOfDigits(n);
 //     return 0;
 // }
 
 // 5 Print sum of first and last digit of given number
+// 125 = 1+5=6
 // #include<iostream>
-
 // using namespace std;
 // int main()
 // {
@@ -110,6 +114,8 @@
 // }
 
 // 6. to print sum of middle of digits of given number
+// 123 = 2
+// 1254 = 2+5 = 7
 // #include <iostream>
 // #include <string>
 // #include <algorithm>
@@ -139,6 +145,9 @@
 // }
 
 // 7. Reverse a Number
+// Enter an integer: 125
+// Reversed Number = 521
+
 // #include <iostream>
 // using namespace std;
 
@@ -161,6 +170,7 @@
 // }
 
 // 8. Number is Palindrome or Not
+// 121 = 121 its Palindrome
 // #include <iostream>
 // using namespace std;
 
@@ -191,6 +201,8 @@
 // }
 
 // 9. Armstrong Number
+// 153 = 1^3 5^3 3^3=1+125+27=153
+
 // #include <iostream>
 // using namespace std;
 
@@ -203,9 +215,9 @@
 //     while (originalNum != 0) {
 //         // remainder contains the last digit
 //         remainder = originalNum % 10;
-        
+
 //         result += remainder * remainder * remainder;
-        
+
 //         // removing last digit from the original number
 //         originalNum /= 10;
 //     }
@@ -249,6 +261,7 @@
 // }
 
 // 11 Number is Prime or Not
+// self devided and 1
 // #include <iostream>
 // using namespace std;
 
@@ -281,25 +294,29 @@
 //   return 0;
 // }
 
+
 // 12 find the factorial of a number
 // #include <iostream>
 // using namespace std;
 
 // int main() {
-//   int number, factorial=1 ;
-//   cin >> number;
-//   for (int i = number; i >= 1 ; i--)
-//   {
-//     factorial = factorial * i;
-//   }
-//   cout << "The factorial of the given number is: " << factorial << endl;
-//   return 0;
+//     int num, factorial = 1;
+//     cout << "Enter a number: ";
+//     cin >> num;
+
+//     for (int i = 1; i <= num; i++) {
+//         factorial *= i;
+//     }
+
+//     cout << "Factorial of " << num << " is " << factorial;
+//     return 0;
 // }
 
+
 // 13 fibonacci series upto nth term
+// 9: 0 1 1 2 3 5 8 13 21
 // #include <iostream>
 // using namespace std;
-
 
 // void fibonacci(int n) {
 //     int a = 0, b = 1, nextTerm;
@@ -329,7 +346,8 @@
 //     return 0;
 // }
 
-// 14.  write a table 
+
+// 14.  write a table
 // #include <iostream>
 // using namespace std;
 
@@ -337,11 +355,11 @@
 //     int num;
 //     cout << "Enter a number: ";
 //     cin >> num;
-    
+
 //     for (int i = 1; i <= 10; i++) {
-//         cout << num << " * " << i << " = " << num * i << "  ";
+//         cout << num << " * " << i << " = " << num * i << "  "<<endl;
 //     }
 //     cout << endl;
-    
+
 //     return 0;
 // }
