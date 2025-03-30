@@ -263,8 +263,7 @@
  
      Node *temp = top;
      top = top->next;
-     cout << temp->data << " dele
-     ted from stack!" << endl;
+     cout << temp->data << " deleted from stack!" << endl;
      delete temp;
  }
  

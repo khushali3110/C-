@@ -48,10 +48,12 @@
 //     int totalPaisa, rupees, paisa;
 //     cout << "Enter Total Paisa : ";
 //     cin >> totalPaisa;
-//     rupees = rupees / 100;
+//     rupees = totalPaisa / 100.0;
+
 //     paisa = totalPaisa % 100;
-//     cout << "Total Paisa = " << totalPaisa << endl;
-//     cout << "Converted Paisa in Rs = " << rupees << "." << paisa << endl;
+    
+//     cout << "rupees in Rs = " << rupees <<endl;
+//     cout << "paise in Rs = " << paisa <<endl;
 //     return 0;
 // }
 
@@ -634,6 +636,7 @@
 // 1 2 2  3 4 4 5
 // its unique values
 // 1 3 5 
+
 // #include <iostream>
 // #include <unordered_map>
 // using namespace std;

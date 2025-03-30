@@ -890,5 +890,71 @@
 //         cout << num1 << " & " << num2 << " are friendly pairs";
 //     else
 //         cout << num1 << " & " << num2 << " are not friendly pairs";    
-// }
+// 
 
+
+// 31. Highest Common Factor(HCF):
+
+//  #include <iostream>
+//  using namespace std;
+ 
+//  int hcf(int num1, int num2)
+//  {
+ 
+//      // Method - 1
+     
+//      for (int i = ((num1 < num2) ? num1 : num2); i >= 1; i--)
+//      {
+ 
+//          if (num1 % i == 0 && num2 % i == 0)
+//          {
+//              return i;
+             
+//          }
+//      }
+//  }
+ 
+//  int main()
+//  {
+ 
+//      int num1 = 8;
+//      int num2 = 20;
+ 
+//      int result = hcf(num1, num2);
+ 
+//      cout << "HCF of " << num1 << " and " << num2 << " is : " << result << endl;
+//  }
+
+// method 2
+#include <iostream>
+ using namespace std;
+ 
+ int hcf(int num1, int num2)
+ {
+ 
+     // Method - 2
+ 
+     int hcfdata = 0;
+ 
+     for (int i = 1; i <= num1 || i <= num2; i++)
+     {
+ 
+         if (num1 % i == 0 && num2 % i == 0)
+         {
+             hcfdata = i;
+         }
+     }
+ 
+     return 0;
+ }
+ 
+ int main()
+ {
+ 
+     int num1 = 8;
+     int num2 = 20;
+ 
+     int result = hcf(num1, num2);
+ 
+     cout << "HCF of " << num1 << " and " << num2 << " is : " << result << endl;
+ }
