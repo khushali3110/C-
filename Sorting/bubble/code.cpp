@@ -8,18 +8,19 @@ int bubbleSort(int arr[], int n)
     for (int i = 0; i < n - 1; i++)
     {
 
-        // Inner loop to compare adjacent elements
-        for (int j = 0; j < n - i - 1; j++)
+        // Inner loop to last compare [2 digite compare krse pachi em - ocha thtu jse] 
+        // adjacent elements
+        for (int j = 0; j < n - i - 1 ; j++)
         {
-            // If current element is greater than the next, swap them
+            // If current element is greater than the next, swap them[previous,next]
             if (arr[j] > arr[j + 1])
             {
                 swap(arr[j], arr[j + 1]);
+
             }
         }
     }
 }
-
 
 
 int main()
