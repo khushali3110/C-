@@ -15,6 +15,8 @@ using namespace std;
      if (num % i == 0)
      {
          count++;
+         
+         
      }
  
      return prime(num, i+1, count);
