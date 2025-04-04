@@ -31,6 +31,7 @@ void merge(int arr[], int start, int end)
     int index1 = 0;
     int index2 = 0;
 
+    // for compereason
     while (index1 < length1 && index2 < length2)
     {
         if (firstArray[index1] < secondArray[index2])
@@ -42,7 +43,8 @@ void merge(int arr[], int start, int end)
             arr[originalIndex++] = secondArray[index2++];
         }
     }
-
+    // last ma number rai jay atle
+    
     while (index1 < length1)
     {
         arr[originalIndex++] = firstArray[index1++];
